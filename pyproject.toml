@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "conversation-human-evaluation-dashboard"
+version = "0.1.0"
+description = ""
+authors = ["FacerAin <ywsong.dev@kakao.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.39.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

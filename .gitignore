@@ -6,6 +6,8 @@ __pycache__/
 # C extensions
 *.so
 
+data_store.json
+
 # Distribution / packaging
 .Python
 build/

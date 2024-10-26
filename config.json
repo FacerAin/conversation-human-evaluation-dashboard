@@ -1,0 +1,8 @@
+{
+    "MODEL_LIST": [
+        "COMEDY_LLAMA(GPT)", "COMEDY_LLAMA(LLAMA)", "COMEDY_GPT(GPT)",
+        "RAG_BM25(GPT)", "RAG_FAISS(GPT)", "CONTEXT_FULL(GPT)", "CONTEXT_LESS(GPT)"
+    ],
+    "LABELER_LIST": ["User1", "User2", "User3"],
+    "DATA_PATH": "dataset/human_eval_file.jsonl"
+}
