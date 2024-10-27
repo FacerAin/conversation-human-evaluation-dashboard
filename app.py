@@ -75,8 +75,17 @@ def show_row_info(row, doc_id, user_id):
         st.write('Current Conversation')
         current_dialogues = row['Current']
         display_session_dialogue(current_dialogues)
+
+    st.text(f'{row["Compressed Memory"]}')
     st.write('Current Conversation')
-    model_tabs = st.tabs([f"Model {i+1}" for i in range(len(MODEL_LIST))])
+        # Add toggle switch to show or hide model names
+    show_model_names = st.sidebar.checkbox('Show Model Names', value=True)
+
+    # Determine tab labels based on the toggle switch state
+    if show_model_names:
+        model_tabs = st.tabs([f"Model {i+1}: {model}" for i, model in enumerate(MODEL_LIST)])
+    else:
+        model_tabs = st.tabs([f"Model {i+1}" for i in range(len(MODEL_LIST))])
 
     for idx, model in enumerate(MODEL_LIST):
         with model_tabs[idx]:
